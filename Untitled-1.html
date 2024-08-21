@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de Présentation - Bakst</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(45deg, #1e3c72, #2a5298);
+            background-size: 200% 200%;
+            animation: gradientBG 15s ease infinite;
+            color: #fff;
+            text-align: center;
+            overflow-x: hidden;
+        }
+        header {
+            background: rgba(30, 30, 30, 0.8);
+            color: #fff;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: 700;
+        }
+        .container {
+            max-width: 800px;
+            margin: 80px auto 20px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            position: relative;
+            z-index: 10;
+        }
+        .code-section {
+            background: #ff6f61;
+            color: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .code-section h2 {
+            margin: 0;
+            font-size: 1.8em;
+            font-weight: 600;
+        }
+        .links {
+            list-style: none;
+            padding: 0;
+        }
+        .links li {
+            margin: 15px 0;
+        }
+        .links a {
+            text-decoration: none;
+            color: #ff6f61;
+            font-weight: 600;
+            font-size: 1.2em;
+            transition: color 0.3s, transform 0.3s;
+            display: inline-block;
+            position: relative;
+        }
+        .links a::after {
+            content: '';
+            display: block;
+            height: 2px;
+            width: 0;
+            background: #ff6f61;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            transition: width 0.3s;
+        }
+        .links a:hover {
+            color: #ff9a8b;
+            transform: scale(1.1);
+        }
+        .links a:hover::after {
+            width: 100%;
+        }
+        footer {
+            margin-top: 20px;
+            padding: 20px;
+            background: rgba(30, 30, 30, 0.8);
+            color: #fff;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+        }
+        @keyframes gradientBG {
+            0% { background-position: 0% 0%; }
+            50% { background-position: 100% 100%; }
+            100% { background-position: 0% 0%; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenue sur la page de Bakst</h1>
+    </header>
+    <div class="container">
+        <div class="code-section">
+            <h2>Code Créateur Fortnite</h2>
+            <p>Utilise mon code créateur <strong>BAKST</strong> dans la boutique Fortnite !</p>
+        </div>
+        <h2>Me suivre sur les réseaux sociaux</h2>
+        <ul class="links">
+            <li><a href="https://www.instagram.com/bat.dmz/" target="_blank">Instagram</a></li>
+            <li><a href="https://x.com/YTBBKST" target="_blank">X (anciennement Twitter)</a></li>
+            <li><a href="https://www.tiktok.com/@baksttiktok?lang=fr" target="_blank">TikTok</a></li>
+            <li><a href="https://www.youtube.com/@Baptiste1605" target="_blank">YouTube</a></li>
+        </ul>
+    </div>
+    <footer>
+        <p>&copy; 2024 Bakst. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
